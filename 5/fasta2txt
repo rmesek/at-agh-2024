@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Ten skrypt wypisuje do wyjścia wiersze pliku tekstowego podanego
+# na wejściu, bez 1. wiersza i połączone w 1 wiersz
+
+# `-n +2`: Skopiuj do wyjścia wszystkie wiersze wejścia od 2. wiersza
+# `-d '\r\n'`: Skopiuj do wyjścia całe wejście bez znaków `\r` i `\n`
+
+tail -n +2 | tr -d '\r\n'

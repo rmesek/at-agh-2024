@@ -1,0 +1,1 @@
+grep -oP "(ATG|ATA).+?(TAA|TAG|AGA|AGG)"
